@@ -5,7 +5,7 @@
 *
 # Explicitly ignore all directories with */ to ensure files in subdirectories
 # are not matched
-*/
+# */
 # Unignore just the top-level README.md
 !README.md
 # Also track the .gitignore file itself
@@ -30,3 +30,6 @@
 
 !AI/
 !AI/**
+!git/
+!git/git-diff.md
+!git/remote-repo.md

@@ -1,0 +1,32 @@
+# Git "allowlist" pattern - ignore everything by default
+# This .gitignore is configured to track ONLY the files you explicitly allow
+
+# First, ignore all files with *
+*
+# Explicitly ignore all directories with */ to ensure files in subdirectories
+# are not matched
+*/
+# Unignore just the top-level README.md
+!README.md
+# Also track the .gitignore file itself
+!.gitignore
+
+# Then, add exceptions (files/directories you want to track) using ! prefix
+# Examples:
+# !.gitignore             # Track the .gitignore file itself
+# !README.md              # Track specific files
+# !src/                   # Track the src directory
+# !src/**                 # Track everything inside src directory
+# !*.py                   # Track all Python files
+# !Makefile               # Track Makefile
+
+# Uncomment the lines below to track specific files/directories
+# !.gitignore               # Track this .gitignore file
+
+# Even if you un-ignore a directory, you still need to un-ignore its contents
+# For example, to track everything in a "src" directory:
+# !src/
+# !src/**
+
+!AI/
+!AI/**

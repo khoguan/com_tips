@@ -33,5 +33,7 @@
 !git/
 !git/git-diff.md
 !git/remote-repo.md
+!nvim/
+!nvim/**
 !taigi/
 !taigi/**

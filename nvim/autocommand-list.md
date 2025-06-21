@@ -21,7 +21,7 @@ This saves all autocommands to ~/autocmds.txt in your home directory.
 This saves to a temporary file and opens it for immediate viewing.
 
 ### Method 3: Capture to a new buffer
-`vim
+```vim
 :enew | put =execute('autocmd') | 1delete
 ```
 This creates a new buffer and puts the autocommands output directly into it, then deletes the first empty line.

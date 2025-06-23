@@ -1,7 +1,8 @@
 我：I query the value of vim 'breakat' option by `:set breakat?`, but I cannot
 determine if the result string contains space, how?
 
-Warp AI:
+Warp AI: Great question! The breakat option can be tricky to read because spaces
+aren't visually obvious. Here are several ways to check if it contains a space:
 
 ## Method 1: Use echo to make spaces visible
 ```

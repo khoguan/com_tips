@@ -62,28 +62,32 @@
   100644 5e30b27c0a4cdd930f0a92e618eed36818cb5b7a 0    git/remote-repo.md
 ```
 
-AI 解說 "100"：  
+### AI 解說 "100"
+
 The 100644 you see in git ls-files -s is actually a 6-digit octal number that
 represents the file mode in Git's internal format. Let me break it down:
 
-•  100: This is the file type indicator
-•  644: This is the traditional Unix permission you're familiar with
+*  100: This is the file type indicator
+*  644: This is the traditional Unix permission you're familiar with
 
 The first three digits (100) indicate the file type:
-•  100 = regular file
-•  040 = directory  
-•  120 = symbolic link
-•  160 = gitlink (submodule)
+
+*  100 = regular file
+*  040 = directory  
+*  120 = symbolic link
+*  160 = gitlink (submodule)
 
 So 100644 means:
-•  100 = regular file
-•  644 = owner can read/write, group can read, others can read
+
+*  100 = regular file
+*  644 = owner can read/write, group can read, others can read
 
 Other common Git file modes you might see:
-•  100644 = regular file with 644 permissions
-•  100755 = regular file with 755 permissions (executable)
-•  120000 = symbolic link
-•  040000 = directory (though directories don't typically show up in git ls-files)
+
+*  100644 = regular file with 644 permissions
+*  100755 = regular file with 755 permissions (executable)
+*  120000 = symbolic link
+*  040000 = directory (though directories don't typically show up in git ls-files)
 
 This is why all your files show 100644 - they're all regular files with standard
 read/write permissions for the owner and read-only for group/others, which is
